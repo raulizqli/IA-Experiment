@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda una cita - Sesiones presenciales y en línea con Stephanie Leal">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Agendar una cita - Stephanie Leal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../index.html">Stephanie Leal</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">Servicios <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#sesiones">Sesiones Psicológicas</a></li>
+                            <li><a href="servicios.html#talleres">Talleres y Cursos</a></li>
+                            <li><a href="servicios.html#empresariales">Empresariales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="agendar.html" class="active">Agendar una cita <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="agendar.html#presencial">Sesión Presencial</a></li>
+                            <li><a href="agendar.html#linea">Sesión en Línea</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Agendar una Cita</h1>
+                <p class="hero-subtitle">Elige la modalidad que mejor se adapte a ti</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="presencial" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sesión Presencial</h2>
+            </div>
+            <div class="about-content">
+                <p>Las sesiones presenciales se realizan en mi consultorio ubicado en Monterrey, Nuevo León. Ofrezco un ambiente seguro, cómodo y confidencial para tu terapia.</p>
+                
+                <div class="highlight-box" style="margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Ubicación:</h3>
+                    <p style="font-size: 1.1rem; margin: 0;">
+                        <strong>Tampico 160, Colonia las Brisas<br>Monterrey, Nuevo León</strong>
+                    </p>
+                </div>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Beneficios de la terapia presencial:</h3>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 2;">
+                    <li>Ambiente dedicado y sin distracciones</li>
+                    <li>Contacto cara a cara</li>
+                    <li>Espacio físico seguro y confidencial</li>
+                    <li>Sin necesidad de tecnología adicional</li>
+                </ul>
+
+                <div style="margin-top: 2rem;">
+                    <a href="#formulario-cita" class="btn btn-primary">Agendar sesión presencial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="linea" class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sesión en Línea</h2>
+            </div>
+            <div class="about-content">
+                <p>Las sesiones en línea te permiten recibir terapia desde la comodidad de tu hogar, sin importar dónde te encuentres. Esta modalidad me permite atender pacientes en diferentes ciudades y países.</p>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Beneficios de la terapia en línea:</h3>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 2;">
+                    <li>Flexibilidad de horarios</li>
+                    <li>Comodidad desde tu hogar</li>
+                    <li>Ahorro de tiempo en traslados</li>
+                    <li>Accesible desde cualquier lugar</li>
+                    <li>Misma calidad de atención profesional</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Requisitos técnicos:</h3>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 2;">
+                    <li>Conexión a internet estable</li>
+                    <li>Dispositivo con cámara y micrófono (computadora, tablet o smartphone)</li>
+                    <li>Espacio privado y tranquilo</li>
+                </ul>
+
+                <div style="margin-top: 2rem;">
+                    <a href="#formulario-cita" class="btn btn-primary">Agendar sesión en línea</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario-cita" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formulario de Reserva</h2>
+                <p>Completa el siguiente formulario para agendar tu cita. Me pondré en contacto contigo para confirmar la fecha y hora.</p>
+            </div>
+            <div class="contact-wrapper" style="max-width: 800px; margin: 0 auto;">
+                <div class="contact-form-container" style="width: 100%;">
+                    <form id="appointmentForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre-cita">Nombre completo *</label>
+                            <input type="text" id="nombre-cita" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-cita">Correo electrónico *</label>
+                            <input type="email" id="email-cita" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono-cita">Teléfono *</label>
+                            <input type="tel" id="telefono-cita" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modalidad">Modalidad de sesión *</label>
+                            <select id="modalidad" name="modalidad" required style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 5px; font-family: var(--font-secondary); font-size: 1rem;">
+                                <option value="">Selecciona una opción</option>
+                                <option value="presencial">Sesión Presencial</option>
+                                <option value="linea">Sesión en Línea</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-preferida">Fecha preferida</label>
+                            <input type="date" id="fecha-preferida" name="fecha" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 5px; font-family: var(--font-secondary); font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="hora-preferida">Hora preferida</label>
+                            <input type="time" id="hora-preferida" name="hora" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 5px; font-family: var(--font-secondary); font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="motivo">Motivo de consulta o información adicional</label>
+                            <textarea id="motivo" name="motivo" rows="4" style="width: 100%; padding: 12px; border: 2px solid var(--border-color); border-radius: 5px; font-family: var(--font-secondary); font-size: 1rem;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar solicitud de cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Stephanie Leal</h4>
+                    <p>Psicóloga profesional especializada en adolescentes, niños y adultos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="servicios.html">Mis servicios</a></li>
+                        <li><a href="agendar.html">Agendar cita</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terminos.html">Términos de uso</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stephanie Leal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Formulario de cita
+        const appointmentForm = document.getElementById('appointmentForm');
+        if (appointmentForm) {
+            appointmentForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const formData = {
+                    nombre: document.getElementById('nombre-cita').value,
+                    email: document.getElementById('email-cita').value,
+                    telefono: document.getElementById('telefono-cita').value,
+                    modalidad: document.getElementById('modalidad').value,
+                    fecha: document.getElementById('fecha-preferida').value,
+                    hora: document.getElementById('hora-preferida').value,
+                    motivo: document.getElementById('motivo').value
+                };
+                
+                if (!formData.nombre || !formData.email || !formData.telefono || !formData.modalidad) {
+                    alert('Por favor, completa todos los campos requeridos.');
+                    return;
+                }
+                
+                console.log('Solicitud de cita:', formData);
+                alert('¡Gracias por tu solicitud! Me pondré en contacto contigo pronto para confirmar tu cita.');
+                appointmentForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+

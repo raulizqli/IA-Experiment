@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preguntas frecuentes sobre terapia psicológica con Stephanie Leal">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Preguntas Frecuentes - Stephanie Leal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../index.html">Stephanie Leal</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">Servicios <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#sesiones">Sesiones Psicológicas</a></li>
+                            <li><a href="servicios.html#talleres">Talleres y Cursos</a></li>
+                            <li><a href="servicios.html#empresariales">Empresariales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="agendar.html">Agendar una cita <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="agendar.html#presencial">Sesión Presencial</a></li>
+                            <li><a href="agendar.html#linea">Sesión en Línea</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html" class="active">Preguntas Frecuentes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Preguntas Frecuentes</h1>
+                <p class="hero-subtitle">Resolvemos tus dudas sobre terapia psicológica</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué es la terapia psicológica?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La terapia psicológica es un proceso profesional donde un psicólogo capacitado te ayuda a entender y manejar tus emociones, pensamientos y comportamientos. No es solo para personas con problemas graves, sino para cualquiera que quiera conocerse mejor, mejorar su bienestar emocional o enfrentar desafíos en su vida.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿La terapia es solo para personas "locas"?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, definitivamente no. La terapia psicológica es para cualquier persona que quiera descubrirse y encontrarse, amarse tal y como es, y ver su realidad desde una perspectiva amorosa y diferente. Es un espacio de crecimiento personal y bienestar emocional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto duran las sesiones?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las sesiones típicamente duran entre 50 y 60 minutos. La frecuencia y duración del tratamiento se adapta a las necesidades específicas de cada persona.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cómo funcionan las sesiones en línea?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las sesiones en línea se realizan a través de videollamada en tiempo real. Necesitas una conexión a internet estable y un dispositivo con cámara y micrófono. La calidad de atención es la misma que en las sesiones presenciales, con la ventaja de poder recibir terapia desde la comodidad de tu hogar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué edad atiendes?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Atiendo a niños, adolescentes y adultos. Tengo más de 12 años de experiencia trabajando especialmente con adolescentes, pero también trabajo con niños y adultos de todas las edades.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto cuesta una sesión?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los costos varían según el tipo de servicio y modalidad. Te invito a contactarme directamente para conocer los precios actualizados y opciones de pago.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué información es confidencial?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Toda la información compartida durante las sesiones es estrictamente confidencial. Solo en casos excepcionales y legales (como riesgo de daño a uno mismo o a otros) se podría compartir información, y siempre se informaría al paciente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuántas sesiones necesito?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El número de sesiones varía según cada persona y sus objetivos. Algunas personas ven mejoras en pocas sesiones, mientras que otras pueden beneficiarse de un proceso más largo. Esto se discute y se adapta según tus necesidades.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Ofreces servicios para empresas?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrezco servicios empresariales incluyendo talleres, programas de bienestar laboral, manejo de estrés y desarrollo organizacional. Puedes contactarme para más información sobre estos servicios.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cómo puedo agendar una cita?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puedes agendar una cita completando el formulario en la sección "Agendar una cita", llamándome al 8116128951, o enviándome un correo electrónico. Me pondré en contacto contigo para confirmar la fecha y hora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Tienes más preguntas?</h2>
+                <p>No dudes en contactarme si tienes alguna otra duda</p>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="../index.html#contacto" class="btn btn-primary">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Stephanie Leal</h4>
+                    <p>Psicóloga profesional especializada en adolescentes, niños y adultos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="servicios.html">Mis servicios</a></li>
+                        <li><a href="agendar.html">Agendar cita</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terminos.html">Términos de uso</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stephanie Leal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const isActive = faqItem.classList.contains('active');
+                
+                // Cerrar todos los demás
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').classList.remove('active');
+                    }
+                });
+                
+                // Toggle el actual
+                faqItem.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+

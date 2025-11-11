@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de psicología - Artículos sobre bienestar emocional, depresión, empatía y más">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Blog - Stephanie Leal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .blog-card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+        .blog-card h3 {
+            font-family: var(--font-primary);
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        .blog-card-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .blog-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .blog-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .blog-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="../index.html">Stephanie Leal</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="servicios.html">Servicios <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#sesiones">Sesiones Psicológicas</a></li>
+                            <li><a href="servicios.html#talleres">Talleres y Cursos</a></li>
+                            <li><a href="servicios.html#empresariales">Empresariales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="agendar.html">Agendar una cita <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="agendar.html#presencial">Sesión Presencial</a></li>
+                            <li><a href="agendar.html#linea">Sesión en Línea</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Blog</h1>
+                <p class="hero-subtitle">Artículos sobre bienestar emocional y psicología</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-image">💙</div>
+                    <div class="blog-card-content">
+                        <h3>Empatía y Suicidio</h3>
+                        <div class="blog-card-meta">Publicado: 2024</div>
+                        <p>La empatía juega un papel crucial en la prevención del suicidio. Aprende cómo entender y apoyar a quienes están pasando por momentos difíciles.</p>
+                        <a href="#empathia-suicidio">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🌧️</div>
+                    <div class="blog-card-content">
+                        <h3>Depresión</h3>
+                        <div class="blog-card-meta">Publicado: 2024</div>
+                        <p>Entender la depresión es el primer paso para buscar ayuda. Conoce los signos, síntomas y opciones de tratamiento disponibles.</p>
+                        <a href="#depresion">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🔄</div>
+                    <div class="blog-card-content">
+                        <h3>¿Hacer Cambios?</h3>
+                        <div class="blog-card-meta">Publicado: 2024</div>
+                        <p>El cambio puede ser desafiante pero también transformador. Descubre cómo dar los primeros pasos hacia el cambio que deseas en tu vida.</p>
+                        <a href="#hacer-cambios">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🆘</div>
+                    <div class="blog-card-content">
+                        <h3>Suicidio: Prevención y Apoyo</h3>
+                        <div class="blog-card-meta">Publicado: 2024</div>
+                        <p>Información importante sobre prevención del suicidio, señales de alerta y cómo buscar ayuda para ti o para alguien que conoces.</p>
+                        <a href="#suicidio">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artículos Destacados</h2>
+            </div>
+            <div class="about-content">
+                <div id="empathia-suicidio" style="margin-bottom: 3rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Empatía y Suicidio</h3>
+                    <p>La empatía es la capacidad de entender y compartir los sentimientos de otra persona. Cuando se trata de prevención del suicidio, la empatía puede ser literalmente un salvavidas.</p>
+                    <p>Muchas personas que consideran el suicidio se sienten aisladas, incomprendidas y sin esperanza. Mostrar empatía genuina puede ayudar a estas personas a sentirse vistas, escuchadas y valoradas.</p>
+                    <p><strong>¿Cómo mostrar empatía?</strong></p>
+                    <ul style="margin-left: 2rem; line-height: 2;">
+                        <li>Escucha sin juzgar</li>
+                        <li>Valida sus sentimientos</li>
+                        <li>No minimices su dolor</li>
+                        <li>Ofrece apoyo sin condiciones</li>
+                        <li>Anima a buscar ayuda profesional</li>
+                    </ul>
+                </div>
+
+                <div id="depresion" style="margin-bottom: 3rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Entendiendo la Depresión</h3>
+                    <p>La depresión es más que sentirse triste. Es una condición médica seria que afecta cómo piensas, sientes y actúas. Puede afectar a cualquier persona, independientemente de su edad, género o situación de vida.</p>
+                    <p><strong>Síntomas comunes de depresión:</strong></p>
+                    <ul style="margin-left: 2rem; line-height: 2;">
+                        <li>Sentimientos persistentes de tristeza o vacío</li>
+                        <li>Pérdida de interés en actividades que antes disfrutabas</li>
+                        <li>Cambios en el apetito o peso</li>
+                        <li>Problemas para dormir o dormir demasiado</li>
+                        <li>Fatiga o pérdida de energía</li>
+                        <li>Dificultad para concentrarse</li>
+                        <li>Sentimientos de inutilidad o culpa</li>
+                    </ul>
+                    <p>Si experimentas estos síntomas, es importante buscar ayuda profesional. La depresión es tratable y no tienes que enfrentarla solo.</p>
+                </div>
+
+                <div id="hacer-cambios" style="margin-bottom: 3rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">¿Hacer Cambios?</h3>
+                    <p>El cambio puede ser una de las cosas más desafiantes pero también más gratificantes que podemos experimentar. Ya sea cambiar hábitos, relaciones, carreras o perspectivas, el cambio requiere valentía y determinación.</p>
+                    <p><strong>Pasos para iniciar el cambio:</strong></p>
+                    <ol style="margin-left: 2rem; line-height: 2;">
+                        <li><strong>Reconoce la necesidad de cambio:</strong> El primer paso es ser honesto contigo mismo sobre lo que quieres cambiar.</li>
+                        <li><strong>Establece metas claras:</strong> Define qué quieres lograr y por qué es importante para ti.</li>
+                        <li><strong>Haz un plan:</strong> Divide el cambio en pasos pequeños y manejables.</li>
+                        <li><strong>Busca apoyo:</strong> No tienes que hacerlo solo. Busca apoyo de amigos, familia o profesionales.</li>
+                        <li><strong>Sé paciente contigo mismo:</strong> El cambio toma tiempo. Sé amable contigo mismo durante el proceso.</li>
+                    </ol>
+                </div>
+
+                <div id="suicidio">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Prevención del Suicidio</h3>
+                    <p>El suicidio es un problema de salud pública serio, pero es prevenible. Si tú o alguien que conoces está considerando el suicidio, es crucial buscar ayuda inmediatamente.</p>
+                    <p><strong>Señales de alerta:</strong></p>
+                    <ul style="margin-left: 2rem; line-height: 2;">
+                        <li>Hablar sobre querer morir o suicidarse</li>
+                        <li>Buscar formas de suicidarse</li>
+                        <li>Sentimientos de desesperanza o sin razón para vivir</li>
+                        <li>Aumento en el consumo de alcohol o drogas</li>
+                        <li>Retraimiento de amigos, familia o actividades</li>
+                        <li>Cambios extremos de humor</li>
+                    </ul>
+                    <p><strong>Si necesitas ayuda inmediata:</strong></p>
+                    <ul style="margin-left: 2rem; line-height: 2;">
+                        <li>Línea Nacional de Prevención del Suicidio: 800-273-8255 (EE.UU.)</li>
+                        <li>En México: 800 911 2000 (Línea de la Vida)</li>
+                        <li>Llama al 911 en caso de emergencia</li>
+                    </ul>
+                    <p>Recuerda: pedir ayuda es un signo de fortaleza, no de debilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Stephanie Leal</h4>
+                    <p>Psicóloga profesional especializada en adolescentes, niños y adultos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="servicios.html">Mis servicios</a></li>
+                        <li><a href="agendar.html">Agendar cita</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terminos.html">Términos de uso</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stephanie Leal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
